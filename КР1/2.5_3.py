@@ -2,11 +2,7 @@ def main():
     n = int(input())
     m = int(input())
     d = int(input())
-    print(n, end='')
-    for i in range(n + d, m + 1, d):
-        print(f' - {i}', end='')
-    for i in range(m, n - 1, -d):
-        print(f' - {i}', end='')
+    print(" - ".join([str(x) for x in range(n, m + 1, d)]), "-", " - ".join([str(y) for y in range(m, n - 1, -d)]))
 
 
 if __name__ == '__main__':
