@@ -1,0 +1,1 @@
+{let: n for let, n in [(i, text.lower().count(i)) for i in text.lower() if i.isalpha()]}
